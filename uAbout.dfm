@@ -138,9 +138,9 @@ object AboutBox: TAboutBox
     object Copyright: TLabel
       Left = 8
       Top = 80
-      Width = 74
+      Width = 101
       Height = 13
-      Caption = 'Copyright  2007'
+      Caption = 'Copyright  2007-2020'
       IsControl = True
     end
     object Comments: TLabel
