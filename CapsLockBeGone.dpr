@@ -7,7 +7,7 @@ uses
   uAbout in 'uAbout.pas' {AboutBox},
   uReboot in 'uReboot.pas' {RebootForm},
   uStrings in 'uStrings.pas',
-  NixUtils in 'C:\Documents and Settings\nhodges\My Documents\nixutils\NixUtils.pas';
+  NixUtils in 'NixUtils.pas';
 
 {$R *.res}
 
