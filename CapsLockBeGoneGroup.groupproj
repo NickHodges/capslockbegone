@@ -1,0 +1,38 @@
+﻿<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+    <PropertyGroup>
+        <ProjectGuid>{37745b50-8abb-4552-82d9-89a9c79f6216}</ProjectGuid>
+    </PropertyGroup>
+    <ItemGroup>
+        <Projects Include="CapsLockBeGone.dproj">
+            <Dependencies/>
+        </Projects>
+    </ItemGroup>
+    <ProjectExtensions>
+        <Borland.Personality>Default.Personality.12</Borland.Personality>
+        <Borland.ProjectType/>
+        <BorlandProject>
+            <BorlandProject>
+                <Default.Personality/>
+            </BorlandProject>
+        </BorlandProject>
+    </ProjectExtensions>
+    <Target Name="CapsLockBeGone">
+        <MSBuild Projects="CapsLockBeGone.dproj"/>
+    </Target>
+    <Target Name="CapsLockBeGone:Clean">
+        <MSBuild Projects="CapsLockBeGone.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="CapsLockBeGone:Make">
+        <MSBuild Projects="CapsLockBeGone.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="Build">
+        <CallTarget Targets="CapsLockBeGone"/>
+    </Target>
+    <Target Name="Clean">
+        <CallTarget Targets="CapsLockBeGone:Clean"/>
+    </Target>
+    <Target Name="Make">
+        <CallTarget Targets="CapsLockBeGone:Make"/>
+    </Target>
+    <Import Project="$(BDS)\Bin\CodeGear.Group.Targets" Condition="Exists('$(BDS)\Bin\CodeGear.Group.Targets')"/>
+</Project>
