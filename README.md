@@ -1,5 +1,7 @@
 ﻿
-## I Hate the CapsLock Key
+# I Hate the CapsLock Key
+
+### **NOTE**:  CapsLockKeyBeGone.exe must be run as administrator for it to work
 
 If you hate the CapsLock key like I do, you have come to the right place. This site is the home to CapsLockBeGone, the blessed little utility that will rid you of your CapsLock key forever.
 
